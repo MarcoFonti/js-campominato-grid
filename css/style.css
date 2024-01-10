@@ -42,15 +42,42 @@
     flex-wrap: wrap;
 }
 
-/* QUADRATINI */
-.cell {
+/* QUADRATINI DIFILCOTA' DIFFICILE */
+.cell-difficult {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid #000000;
 }
 
+/* QUADRATINI DIFILCOTA' DIFFICILE */
+.cell-medium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid #000000;
+}
+
+/* QUADRATINI DIFILCOTA' DIFFICILE */
+.cell-easy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid #000000;
+}
+
+
 /* SELECT */
-.form-select {
+#recipe-select {
     width: 150px;
     padding: 2px 0px;
 }
@@ -58,4 +85,9 @@
 /* BOTTONE */
 .recipe-button {
     padding: 2px 20px;
+}
+
+/* CLICK SULLA CASELLA */
+.color-cell {
+    background-color: #0000ff;
 }
