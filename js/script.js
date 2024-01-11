@@ -33,11 +33,19 @@ const rowsEasy = 7
 const colsEasy = 7
 const totEasy = rowsEasy * colsEasy
 
- // EVENTO AL CLICK
+
+
+    // EVENTO AL CLICK
 formElement.addEventListener('submit', (e) => {
 
     
     e.preventDefault();
+
+    buttonField.innerText = 'Ricomincia'
+
+    buttonField.addEventListener('click', ()=>{
+        squaresElement.innerText = ''
+    })
 
     // RECUPERO DATI UTENTE 
     const difficulty = selectField.value;
@@ -52,6 +60,7 @@ formElement.addEventListener('submit', (e) => {
         
             cellElementsDiffiucult.addEventListener('click', () => {
                 cellElementsDiffiucult.classList.toggle('color-cell')
+                console.log(cellElementsDiffiucult.innerText);
             })
         
             squaresElement.appendChild(cellElementsDiffiucult);
@@ -67,6 +76,7 @@ formElement.addEventListener('submit', (e) => {
         
             cellElementsMedium.addEventListener('click', () => {
                 cellElementsMedium.classList.toggle('color-cell')
+                console.log(cellElementsMedium.innerText);
             })
         
             squaresElement.appendChild(cellElementsMedium);
@@ -82,6 +92,7 @@ formElement.addEventListener('submit', (e) => {
         
             cellElementsEasy.addEventListener('click', () => {
                 cellElementsEasy.classList.toggle('color-cell')
+                console.log(cellElementsEasy.innerText);
             })
         
             squaresElement.appendChild(cellElementsEasy);
@@ -89,9 +100,12 @@ formElement.addEventListener('submit', (e) => {
         }
 
     }
-})
+}) 
 
-// ? MI MANCA FAR ESEGUIRE AL BOTTONE EVENTO SOLO UNA VOLTA
+
+
+ 
+
 
 
 
