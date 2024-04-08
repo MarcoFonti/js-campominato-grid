@@ -34,7 +34,7 @@
     align-items: center;
 }
 
-/* RECIPIENTE QUADRATI */
+/* RECIPIENTE CELLE */
 .recipe-squares {
     height: 600px;
     width: 600px;
@@ -42,7 +42,7 @@
     flex-wrap: wrap;
 }
 
-/* QUADRATINI DIFILCOTA' DIFFICILE */
+/* CELL DIFILCOTA' FACILE */
 .cell-difficult {
     display: flex;
     align-items: center;
@@ -53,7 +53,7 @@
     border: 1px solid #000000;
 }
 
-/* QUADRATINI DIFILCOTA' DIFFICILE */
+/* CELL DIFILCOTA' MEDIA */
 .cell-medium {
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@
     border: 1px solid #000000;
 }
 
-/* QUADRATINI DIFILCOTA' DIFFICILE */
+/* CELLE DIFILCOTA' DIFFICILE */
 .cell-easy {
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@
     padding: 2px 20px;
 }
 
-/* CLICK SULLA CASELLA */
+/* CLICK SULLA CELLE */
 .color-cell {
     background-color: #0000ff;
 }
